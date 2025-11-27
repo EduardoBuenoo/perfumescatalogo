@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Essence - Perfumaria Exclusiva</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="src/style/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Bruna Baraldi <span>.</span></div>
+            <div class="mobile-menu-btn" id="mobile-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#femininos">Femininos</a></li>
+                <li><a href="#masculinos">Masculinos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato" class="btn btn-gold nav-cta">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="hero-carousel">
+        <div class="slide active" style="background-image: url('');">
+            <div class="slide-content">
+                <h2>Novidades Exclusivas</h2>
+                <p>Descubra as fragrâncias que acabaram de chegar.</p>
+                <a href="#destaques" class="btn">Ver Coleção</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('src/img/Banner_Yara_Lattafa.png');">
+            <div class="slide-content">
+                <h2>fragrâncias Femininas Arabicas</h2>
+                <p>Descubra fragrâncias inesqueciveis</p>
+                <a href="#femininos" class="btn">Aproveitar Ofertas</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1594035910387-406691aa9303?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+            <div class="slide-content">
+                <h2>Lançamentos Mundiais</h2>
+                <p>O luxo e a sofisticação que você merece.</p>
+                <a href="#masculinos" class="btn">Conhecer</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="destaques">
+        <h2 class="section-title">Destaques da Semana</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=500&q=60" alt="Perfume" class="card-img">
+                <div class="card-body">
+                    <p class="card-cat">Lançamento</p>
+                    <h3 class="card-title">Elegance Gold</h3>
+                    <p class="card-price">R$ 459,90</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml</p>
+                        <p><strong>Família:</strong> Floral Oriental</p>
+                        <p><strong>Ano:</strong> 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523293188086-b1699971f1b3?auto=format&fit=crop&w=500&q=60" alt="Perfume" class="card-img">
+                <div class="card-body">
+                    <p class="card-cat">Best Seller</p>
+                    <h3 class="card-title">Noir Intense</h3>
+                    <p class="card-price">R$ 389,90</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 80ml</p>
+                        <p><strong>Família:</strong> Amadeirado</p>
+                        <p><strong>Ano:</strong> 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=500&q=60" alt="Perfume" class="card-img">
+                <div class="card-body">
+                    <p class="card-cat">Promoção</p>
+                    <h3 class="card-title">Rose Petal</h3>
+                    <p class="card-price">R$ 299,90</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 50ml</p>
+                        <p><strong>Família:</strong> Floral Frutado</p>
+                        <p><strong>Ano:</strong> 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="femininos" class="bg-light">
+        <h2 class="section-title">Perfumes Femininos</h2>
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="src/img/Yara_Lattafa_Rose.png" alt="Perfume F1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Yara Lataffa Rose</h3>
+                    <p class="card-price">R$ 250,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2020</p>
+                        <div class="notes">
+                            <strong>Topo: Orquídea, Heliotrópio e Tangerina. <br> Coração: Acorde Gourmand e Frutas Tropicais. <br> Fundo: Baunilha, Almíscar e Sândalo.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="src/img/Yara_Lattafa_Tous.png" alt="Perfume F2" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Yara Lataffa Lous</h3>
+                    <p class="card-price">R$ 250,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2023</p>
+                        <div class="notes">
+                            <strong>Topo: Manga, Coco e Maracujá. <br> Coração: Heliotrópio, Jasmim e Flor de Laranjeira. <br> Fundo: Baunilha, Cashmeran e Almíscar.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="src/img/Yara_Lattafa_Moi.png" alt="Perfume F3" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Yara Lataffa Moi</h3>
+                    <p class="card-price">R$ 250,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2023</p>
+                        <div class="notes">
+                            <strong>Topo: Pêssego e Jasmim. <br> Coração: Caramelo e Âmbar. <br> Fundo: Patchouli e Sândalo. <br><br><br><br></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="src/img/Yara_Lattafa_Candy.png" alt="Perfume F4" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Yara Lataffa Candy</h3>
+                    <p class="card-price">R$ 260,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2023</p>
+                        <div class="notes">
+                            <strong>Topo: Groselha Preta e Tangerina Verde. <br> Coração: Strawberry Fizz Candy e Gardênia. <br> Fundo: Baunilha, Âmbar, Sândalo e Gardênia.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="src/img/Lataffa_Rose.png" alt="Perfume F5" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Fakhar Rose Lataffa</h3>
+                    <p class="card-price">R$ 240,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2024</p>
+                        <div class="notes">
+                            <strong>Topo: Frutas, Lírio, Romã e Aldeídos. <br> Coração: Tuberosa, Jasmim, Gardênia, Madressilva, Ylang, Rosa e Peônia. <br> Fundo: Baunilha, Almíscar Branco, Ambroxan e Sândalo.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="src/img/Glacier_Bella_Maison_Alhambra.png" alt="Perfume F6" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Glacier Bella Maison Alhambra</h3>
+                    <p class="card-price">R$ 200,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2023</p>
+                        <div class="notes">
+                            <strong>Topo: Bergamota e Pera. <br> Coração: Notas Florais e Couro. <br> Fundo: Âmbar, Almíscar, Baunilha e Vetiver.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1622618991746-fe6004db3a47?auto=format&fit=crop&w=500&q=60" alt="Perfume F7" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Mystic Moon</h3>
+                    <p class="card-price">R$ 440,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 80ml | <strong>Ano:</strong> 2022</p>
+                        <p><strong>Família:</strong> Oriental Especiado</p>
+                        <div class="notes">
+                            <small>Topo: Pimenta | Coração: Orquídea | Fundo: Patchouli</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594145070289-4971480c5980?auto=format&fit=crop&w=500&q=60" alt="Perfume F8" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Citrus Summer</h3>
+                    <p class="card-price">R$ 290,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 120ml | <strong>Ano:</strong> 2023</p>
+                        <p><strong>Família:</strong> Cítrico</p>
+                        <div class="notes">
+                            <small>Topo: Laranja | Coração: Neroli | Fundo: Almíscar</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1616949755610-8c9ad0e13d74?auto=format&fit=crop&w=500&q=60" alt="Perfume F9" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Velvet Touch</h3>
+                    <p class="card-price">R$ 499,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 60ml | <strong>Ano:</strong> 2024</p>
+                        <p><strong>Família:</strong> Floral Amadeirado</p>
+                        <div class="notes">
+                            <small>Topo: Pêssego | Coração: Sândalo | Fundo: Âmbar</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="consultant-box fem-box">
+            <div class="consultant-info">
+                <h3><i class="fab fa-whatsapp"></i> Consultora Especialista Feminina</h3>
+                <p>Tem dúvidas sobre qual fragrância combina com sua personalidade? Fale com a Mariana.</p>
+            </div>
+            <div>
+                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp">Falar com Consultora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="masculinos">
+        <h2 class="section-title">Perfumes Masculinos</h2>
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1623354924151-22921966a41f?auto=format&fit=crop&w=500&q=60" alt="Perfume M1" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Titan Wood</h3>
+                    <p class="card-price">R$ 480,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2022</p>
+                        <p><strong>Família:</strong> Amadeirado</p>
+                        <div class="notes"><small>Topo: Menta | Coração: Canela | Fundo: Couro</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594035910387-406691aa9303?auto=format&fit=crop&w=500&q=60" alt="Perfume M2" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Deep Blue</h3>
+                    <p class="card-price">R$ 390,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 125ml | <strong>Ano:</strong> 2023</p>
+                        <p><strong>Família:</strong> Aromático</p>
+                        <div class="notes"><small>Topo: Bergamota | Coração: Pimenta | Fundo: Ambroxan</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1615164718001-c971032f5082?auto=format&fit=crop&w=500&q=60" alt="Perfume M3" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Black Stone</h3>
+                    <p class="card-price">R$ 299,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 90ml | <strong>Ano:</strong> 2021</p>
+                        <p><strong>Família:</strong> Oriental</p>
+                        <div class="notes"><small>Topo: Cardamomo | Coração: Noz-Moscada | Fundo: Café</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1552573102-2b44b44d81d7?auto=format&fit=crop&w=500&q=60" alt="Perfume M4" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Aqua Marine</h3>
+                    <p class="card-price">R$ 350,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2024</p>
+                        <p><strong>Família:</strong> Aquático Cítrico</p>
+                        <div class="notes"><small>Topo: Lima | Coração: Algas | Fundo: Vetiver</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1595181710609-80d1920703c1?auto=format&fit=crop&w=500&q=60" alt="Perfume M5" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Iron Man</h3>
+                    <p class="card-price">R$ 410,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 80ml | <strong>Ano:</strong> 2022</p>
+                        <p><strong>Família:</strong> Fougère</p>
+                        <div class="notes"><small>Topo: Lavanda | Coração: Gerânio | Fundo: Musgo</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1593487568720-92097fb460cf?auto=format&fit=crop&w=500&q=60" alt="Perfume M6" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Night Rider</h3>
+                    <p class="card-price">R$ 550,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2023</p>
+                        <p><strong>Família:</strong> Couro</p>
+                        <div class="notes"><small>Topo: Açafrão | Coração: Couro | Fundo: Framboesa</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1547887537-6158d64c35e4?auto=format&fit=crop&w=500&q=60" alt="Perfume M7" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Green Forest</h3>
+                    <p class="card-price">R$ 280,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2021</p>
+                        <p><strong>Família:</strong> Verde</p>
+                        <div class="notes"><small>Topo: Cipreste | Coração: Pinho | Fundo: Patchouli</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=60" alt="Perfume M8" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Classic Gentleman</h3>
+                    <p class="card-price">R$ 320,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 90ml | <strong>Ano:</strong> 2020</p>
+                        <p><strong>Família:</strong> Amadeirado Seco</p>
+                        <div class="notes"><small>Topo: Limão | Coração: Cedro | Fundo: Sândalo</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583445013765-46c20c4a6772?auto=format&fit=crop&w=500&q=60" alt="Perfume M9" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Sport Extreme</h3>
+                    <p class="card-price">R$ 240,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 100ml | <strong>Ano:</strong> 2023</p>
+                        <p><strong>Família:</strong> Cítrico Especiado</p>
+                        <div class="notes"><small>Topo: Gengibre | Coração: Lavanda | Fundo: Cedro</small></div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?auto=format&fit=crop&w=500&q=60" alt="Perfume M10" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Royal Oud</h3>
+                    <p class="card-price">R$ 790,00</p>
+                    <div class="card-details">
+                        <p><strong>ML:</strong> 75ml | <strong>Ano:</strong> 2024</p>
+                        <p><strong>Família:</strong> Oud Luxuoso</p>
+                        <div class="notes"><small>Topo: Incenso | Coração: Oud Real | Fundo: Âmbar Cinza</small></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="consultant-box masc-box">
+            <div class="consultant-info">
+                <h3><i class="fab fa-whatsapp"></i> Consultor Especialista Masculino</h3>
+                <p>Precisa de ajuda para escolher um presente ou sua nova assinatura? Fale com o Carlos.</p>
+            </div>
+            <div>
+                <a href="https://wa.me/5511988888888" target="_blank" class="btn btn-whatsapp dark-wa">Falar com Consultor</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2 class="section-title">A Essência da L'Essence</h2>
+        <p class="about-text">
+            Nascemos da paixão por fragrâncias que contam histórias. Nossa curadoria é meticulosa, buscando as notas mais puras e as combinações mais sofisticadas do mundo da perfumaria.
+        </p>
+        <div class="features">
+            <div class="feature-item">
+                <i class="fas fa-gem"></i>
+                <h3>Qualidade Premium</h3>
+                <p>Trabalhamos apenas com fragrâncias originais e de alta fixação.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-pump-soap"></i>
+                <h3>Variedade</h3>
+                <p>Do clássico ao moderno, possuímos um portfólio completo.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-user-tie"></i>
+                <h3>Atendimento VIP</h3>
+                <p>Consultoria personalizada para encontrar o seu cheiro ideal.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo white-logo">L'Essence <span>.</span></div>
+                <p>Sua perfumaria de luxo online. Entregamos elegância em cada frasco.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#femininos">Femininos</a></li>
+                    <li><a href="#masculinos">Masculinos</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato Geral</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@lessence.com.br</li>
+                    <li><i class="fas fa-phone"></i> (11) 3333-4444</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - SP</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Bruna Baraldi. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+</html>
