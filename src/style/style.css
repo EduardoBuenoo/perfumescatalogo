@@ -417,55 +417,62 @@ footer {
 
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
-    /* ... (mantenha os estilos existentes do menu mobile) ... */
-
-    /* 1. TROCA DE IMAGEM DO BANNER NO MOBILE */
-    /* Coloque aqui os caminhos para as imagens verticais/mobile */
-    .slide-1 {
-        background-image: url('caminho/para/imagem-mobile-1.jpg'); 
+    /* --- MENU MOBILE (Mantém o que já existia) --- */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        text-align: center;
     }
-    .slide-2 {
-        background-image: url('caminho/para/imagem-mobile-2.jpg');
-    }
-    .slide-3 {
-        background-image: url('caminho/para/imagem-mobile-3.jpg');
-    }
-
-    /* Ajuste do texto do banner para mobile */
-    .slide-content h2 { 
-        font-size: 2rem; 
-    }
+    .nav-links.active { display: flex; }
+    .mobile-menu-btn { display: block; }
     
-    /* 2. PRODUTOS EM CARROSSEL (SCROLL HORIZONTAL) */
-    /* Isso afeta Destaques, Femininos e Masculinos automaticamente */
+    /* --- AJUSTES GERAIS MOBILE --- */
+    .section-title { font-size: 1.8rem; }
+    .slide-content h2 { font-size: 2rem; }
+
+    /* --- CORREÇÃO DO CARROSSEL DE PRODUTOS --- */
     .products-grid {
-        display: flex;             /* Muda de Grid para Flex para permitir fila */
-        overflow-x: auto;          /* Habilita rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Faz o scroll "travar" nos cards */
-        gap: 15px;                 /* Espaço entre os cards */
-        padding-bottom: 20px;      /* Espaço para a barra de rolagem não colar */
-        padding-left: 5%;          /* Alinhamento inicial bonito */
-        padding-right: 5%;
+        display: flex !important;      /* Garante que sobrescreve o Grid */
+        flex-wrap: nowrap !important;  /* Impede que os itens caiam para a linha de baixo */
+        overflow-x: auto;              /* Ativa a rolagem lateral */
+        gap: 20px;                     /* Espaço entre os produtos */
+        padding: 10px 5% 30px 5%;      /* Espaço interno para não cortar sombras */
+        scroll-snap-type: x mandatory; /* Efeito de 'imã' ao rolar */
         
-        /* Esconder barra de rolagem (opcional, funciona na maioria dos navegadores modernos) */
-        scrollbar-width: none;          /* Firefox */
-        -ms-overflow-style: none;       /* IE/Edge */
-    }
-    
-    .products-grid::-webkit-scrollbar { 
-        display: none;                  /* Chrome/Safari */
+        /* Correção para não quebrar a largura da página */
+        width: 100vw;
+        margin-left: -5%;              /* Compensa o padding da section */
+        box-sizing: border-box;
     }
 
     .product-card {
-        min-width: 85vw;           /* O card ocupa 85% da largura da tela */
-        flex: 0 0 auto;            /* Impede que o card encolha */
-        scroll-snap-align: center; /* Centraliza o card ao parar o scroll */
-        margin-bottom: 10px;       /* Margem de segurança */
+        /* O SEGREDO ESTÁ AQUI: */
+        flex: 0 0 85%;                 /* O cartão ocupa fixamente 85% da tela */
+        width: 85%;                    /* Reforço de largura */
+        max-width: 320px;              /* Trava para não ficar gigante em tablets */
+        scroll-snap-align: center;     /* Centraliza o card ao soltar */
+        margin-bottom: 0;              /* Remove margens desnecessárias */
     }
 
-    /* Ajuste opcional para as setas/títulos no mobile */
-    .section-title { 
-        font-size: 1.8rem;
-        margin-bottom: 30px;
+    /* --- IMAGENS DIFERENTES NO MOBILE (Troca de Banner) --- */
+    /* Certifique-se de usar imagens verticais aqui */
+    .slide-1 {
+        background-image: url('CAMINHO-DA-SUA-IMAGEM-MOBILE-1.jpg') !important;
+        background-position: center top; /* Foca no topo da imagem */
+    }
+    .slide-2 {
+        background-image: url('CAMINHO-DA-SUA-IMAGEM-MOBILE-2.jpg') !important;
+        background-position: center top;
+    }
+    .slide-3 {
+        background-image: url('CAMINHO-DA-SUA-IMAGEM-MOBILE-3.jpg') !important;
+        background-position: center top;
     }
 }
