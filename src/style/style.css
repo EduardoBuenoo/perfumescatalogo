@@ -404,32 +404,68 @@ footer {
     padding-top: 20px;
 }
 
+/* --- IMAGENS DOS BANNERS (Desktop) --- */
+.slide-1 {
+    background-image: url('caminho/para/imagem-desktop-1.jpg'); /* Insira a URL original aqui */
+}
+.slide-2 {
+    background-image: url('src/img/Banner_Yara_Lattafa.png');
+}
+.slide-3 {
+    background-image: url('https://images.unsplash.com/photo-1594035910387-406691aa9303?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 20px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        text-align: center;
+    /* ... (mantenha os estilos existentes do menu mobile) ... */
+
+    /* 1. TROCA DE IMAGEM DO BANNER NO MOBILE */
+    /* Coloque aqui os caminhos para as imagens verticais/mobile */
+    .slide-1 {
+        background-image: url('caminho/para/imagem-mobile-1.jpg'); 
+    }
+    .slide-2 {
+        background-image: url('caminho/para/imagem-mobile-2.jpg');
+    }
+    .slide-3 {
+        background-image: url('caminho/para/imagem-mobile-3.jpg');
+    }
+
+    /* Ajuste do texto do banner para mobile */
+    .slide-content h2 { 
+        font-size: 2rem; 
     }
     
-    .nav-links.active { display: flex; }
-    .mobile-menu-btn { display: block; }
-    
-    .slide-content h2 { font-size: 2rem; }
-    .section-title { font-size: 2rem; }
-    
-    .consultant-box { 
-        text-align: center; 
-        justify-content: center; 
-        flex-direction: column;
+    /* 2. PRODUTOS EM CARROSSEL (SCROLL HORIZONTAL) */
+    /* Isso afeta Destaques, Femininos e Masculinos automaticamente */
+    .products-grid {
+        display: flex;             /* Muda de Grid para Flex para permitir fila */
+        overflow-x: auto;          /* Habilita rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Faz o scroll "travar" nos cards */
+        gap: 15px;                 /* Espaço entre os cards */
+        padding-bottom: 20px;      /* Espaço para a barra de rolagem não colar */
+        padding-left: 5%;          /* Alinhamento inicial bonito */
+        padding-right: 5%;
+        
+        /* Esconder barra de rolagem (opcional, funciona na maioria dos navegadores modernos) */
+        scrollbar-width: none;          /* Firefox */
+        -ms-overflow-style: none;       /* IE/Edge */
     }
     
-    .consultant-info h3 { justify-content: center; }
+    .products-grid::-webkit-scrollbar { 
+        display: none;                  /* Chrome/Safari */
+    }
+
+    .product-card {
+        min-width: 85vw;           /* O card ocupa 85% da largura da tela */
+        flex: 0 0 auto;            /* Impede que o card encolha */
+        scroll-snap-align: center; /* Centraliza o card ao parar o scroll */
+        margin-bottom: 10px;       /* Margem de segurança */
+    }
+
+    /* Ajuste opcional para as setas/títulos no mobile */
+    .section-title { 
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
 }
