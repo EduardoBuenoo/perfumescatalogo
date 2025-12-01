@@ -468,11 +468,11 @@ footer {
         background-position: center top; /* Foca no topo da imagem */
     }
     .slide-2 {
-        background-image: url('CAMINHO-DA-SUA-IMAGEM-MOBILE-2.jpg') !important;
+        background-image: url('../img/Banner_Feminino_Mobile.png') !important;
         background-position: center top;
     }
     .slide-3 {
-        background-image: url('CAMINHO-DA-SUA-IMAGEM-MOBILE-3.jpg') !important;
+        background-image: url('../img/Banner_Masculino_Mobile.png') !important;
         background-position: center top;
     }
 }
