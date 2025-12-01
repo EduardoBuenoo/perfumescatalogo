@@ -406,13 +406,13 @@ footer {
 
 /* --- IMAGENS DOS BANNERS (Desktop) --- */
 .slide-1 {
-    background-image: url('caminho/para/imagem-desktop-1.jpg'); /* Insira a URL original aqui */
+    background-image: url('../img/Banner_Destaques.png'); /* Insira a URL original aqui */
 }
 .slide-2 {
-    background-image: url('../img/Banner_Yara_Lattafa.png');
+    background-image: url('../img/Banner_Feminino.png');
 }
 .slide-3 {
-    background-image: url('https://images.unsplash.com/photo-1594035910387-406691aa9303?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-image: url('../img/Banner_Masculino.png');
 }
 
 /* --- RESPONSIVIDADE --- */
@@ -464,7 +464,7 @@ footer {
     /* --- IMAGENS DIFERENTES NO MOBILE (Troca de Banner) --- */
     /* Certifique-se de usar imagens verticais aqui */
     .slide-1 {
-        background-image: url('CAMINHO-DA-SUA-IMAGEM-MOBILE-1.jpg') !important;
+        background-image: url('../img/Banner_Destaques_Mobile.png') !important;
         background-position: center top; /* Foca no topo da imagem */
     }
     .slide-2 {
