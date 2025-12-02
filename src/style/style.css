@@ -419,6 +419,9 @@ footer {
 .slide-3 {
     background-image: url('../img/Banner_Masculino.png');
 }
+.slide-4 {
+    background-image: url('../img/Banner_Redmi.png');
+}
 
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 768px) {
@@ -478,6 +481,10 @@ footer {
     }
     .slide-3 {
         background-image: url('../img/Banner_Masculino_Mobile.png') !important;
+        background-position: center top;
+    }
+    .slide-4 {
+        background-image: url('../img/Banner_Redmi_Mobile.png') !important;
         background-position: center top;
     }
 }
