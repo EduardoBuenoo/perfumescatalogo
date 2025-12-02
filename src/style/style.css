@@ -26,7 +26,12 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+}
+
+h1, h3, h4 {
     font-family: 'Playfair Display', serif;
     color: var(--primary-black);
 }
